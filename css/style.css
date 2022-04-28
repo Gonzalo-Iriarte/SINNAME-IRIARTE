@@ -51,9 +51,49 @@
     border-radius: 100%;
     border-color: #9e889e;
 
-	
+    animation: efectoLogo 1s both;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
 }
-
+@keyframes efectoLogo {
+    0% {
+        transform: translateX(150px); 
+        animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+        transform: translateX(75px); 
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateX(50px); 
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateX(25px); 
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateX(6px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+  }
 
 .superior nav ul li {
     list-style: none;
@@ -64,9 +104,11 @@
 .superior nav ul li a {
     text-decoration: none; 
     color: #5e065e;
-    
+    transition: all 0.8s;
 }
-
+.superior nav ul li a:hover {
+    color: #fafafa;
+}
 /* HEADER END */
 
 /* MAIN START */
@@ -201,9 +243,11 @@ button {
 .inferior .terminosYcondiciones a{
     color: black;
     font-weight: 700;
-   
+    transition: all 0.8s;
 }
-
+.inferior .terminosYcondiciones a:hover {
+    color: rgb(255, 255, 255);
+}
 .inferior span {
     position: absolute;
     font-weight: 700;
