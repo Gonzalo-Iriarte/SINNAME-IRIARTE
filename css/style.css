@@ -1,0 +1,630 @@
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER START */
+.cuadro {
+    min-height: 100vh;
+}
+.superior {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(216, 139, 223);
+    border-bottom: solid 2px;
+    justify-content: space-between;
+}
+.menuImagen {
+    display: none;
+}
+.superior h1 {
+    font-size: 5rem;
+    font-family: 'Langar', cursive;
+}
+.superior nav {
+    display: flex;
+    height: 100%;
+    width: 32%;
+    border-left: solid #5e065e;
+    align-items: center;
+}
+.superior nav ul {
+    display: flex;
+    width: 100%;
+    margin: 2%;
+    gap: 3%;
+    justify-content: space-between;
+}
+.logo {
+    width: 12%;
+    height: 100%;
+    padding: 8px;
+}
+.logo img {
+    margin: 2%;
+    height: 95%; 
+    width: 88%;
+    border:groove;
+    border-radius: 100%;
+    border-color: #9e889e;
+
+	
+}
+
+
+.superior nav ul li {
+    list-style: none;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 30px;
+    font-weight: 700;
+}
+.superior nav ul li a {
+    text-decoration: none; 
+    color: #5e065e;
+    
+}
+
+/* HEADER END */
+
+/* MAIN START */
+.imagenFondo img {
+    width: 100%;  
+}
+
+/* SECCION 1 */
+.seccion1 {
+    display: flex;
+    background-color: rgb(216, 139, 223);
+    border: solid #5e065e;
+}
+.textoPrincipal {
+    width: 50%;
+    border-left:#5e065e solid 8px;
+    height: 100%;
+}
+.textoPrincipal p {
+    text-align: center;
+    padding-top: 3rem;
+    color: black;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: larger;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 40px;
+}
+.imagenPrincipal img {
+    width: 100%;
+}
+
+/* SECCION 2 */
+.seccion2 video {
+    width: 100%;
+}
+.seccion2 h2 {
+    text-align: center;
+    background-color:rgb(216, 139, 223) ;
+    border-left: solid #5e065e;
+    border-right: solid #5e065e;
+    border-bottom: solid #5e065e;
+    height: 8rem;
+    padding-top: 3rem;
+    color: #5e065e;
+}
+
+/* SECCION 3 */
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(216, 139, 223);
+    height: 60rem;
+    background-image: url(../images/imagenTextoPpal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.seccion3__formulario {
+    display: flex;
+    flex-direction: column;
+    color: #5e065e;
+    border: solid white;
+    border-bottom: solid white 1px;
+    width: 100%;
+    height: 18rem;
+    padding: 10px;
+    text-align: left;
+    line-height: 3rem;
+    font-size: larger;
+    font-weight: 700;    
+}
+.seccion3__formulario h2 {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+.seccion3__formulario form input {
+    border-radius: 8px;
+    width: 11rem;
+    height: 2rem;
+}
+.seccion3__formulario a {
+    display: inline-block;
+    margin-left: 6rem;
+    font-size: small;
+}
+button {
+    display: block;
+    margin-left: 4.7rem;
+    margin-top: 2rem;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 8px;
+}
+/* MAIN END */
+
+/* FOOTER */
+.inferior {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(216, 139, 223);
+    height: 15vh;
+    border: solid 2px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+.inferior a {
+    text-decoration: none;
+}
+.inferior .redes nav ul  {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   list-style: none;
+}
+.inferior .redes nav ul li {
+    padding: 1rem 3rem;
+}
+.inferior .redes nav ul li img:hover {
+    transform: scale(1.1);
+}
+.inferior .terminosYcondiciones nav ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: right;
+   list-style: none;
+}
+.inferior .terminosYcondiciones nav ul li {
+    padding: 0.4rem;
+}
+.inferior .terminosYcondiciones a{
+    color: black;
+    font-weight: 700;
+   
+}
+
+.inferior span {
+    position: absolute;
+    font-weight: 700;
+    width: 20%;
+    bottom: 0;
+    left: 0;
+    margin: 0.4rem;
+}
+/* FOOTER END */
+
+/* NEWS */
+.cuadroNews {
+    background: rgb(216,139,223);
+    background: linear-gradient(180deg, rgba(216,139,223,1) 0%, rgba(142,0,143,1) 100%, rgba(244,125,255,1) 100%);
+}
+.noticias {
+    padding: 1rem;
+    margin: 5rem;
+    min-height: 500px;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-areas: 
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8"
+
+}
+.noticias__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: solid 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+/* TOUR */
+.tour {
+    font-family: 'Langar', cursive;
+}
+.tour h1 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3rem;
+}
+.tour h2 {
+    margin-left: 5%;
+    font-size: 2rem;
+    font-style: italic;
+}
+.eventos {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: solid;
+    gap: 3rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: 'Langar', cursive;
+}
+.eventos__item {
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    padding: 2rem;
+    font-size: larger;
+    background-color: #9e889e;
+}
+.eventos a {
+    text-decoration: none;
+}
+.informacionExtra {
+    width: 100%;
+    
+    font-family: 'Langar', cursive;
+    text-align: center;
+}
+.informacionExtra h2 {
+    text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+}
+.informacionExtra h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+.informacionExtra iframe {
+    width: 70%;
+    height: 565px;
+    margin-bottom: 1rem;
+}
+
+/* MERCH */
+.mercaderia {
+    font-family: 'Langar', cursive;
+}
+.mercaderia h1 {
+    text-align: center;
+    margin: 6rem 2rem 2rem 2rem;
+    font-size: 3rem;
+}
+.merch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8";
+    margin: 1rem;
+    padding: 1rem;
+}
+.merch__item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.merch__item img {
+    width: 100%;
+    padding-bottom: 0.5rem;
+
+    transition: transform 1s;
+}
+.merch__item:hover img {
+    transform: scale(1.1);
+}
+.merch__item p {
+    font-style: italic;
+}
+
+/* MUSIC */
+.stream {
+    border: solid;
+    margin-left: 40% ;
+    margin: 5% 40% 5% 40%;
+    width: 20%;
+    min-height: 500px;
+    text-align: center;
+    font-family: 'Langar', cursive;
+}
+.stream img {
+    width: 100%;
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 10px;
+    justify-content: space-between; 
+}
+.servicio__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: solid black 1px;
+    margin: 1px;
+}
+ .servicio__item a {
+    text-decoration: none;
+}
+
+/* TERMINOS */
+.terms {
+    font-size: large;
+    width: 90%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+.terms h1 {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+/* MEDIA QUERIE */
+@media screen and (max-width: 600px) {
+
+/* HEADER */
+    .superior {
+        height: 10vh;
+        align-items: center;
+        border: solid 2px;
+    }
+    .superior nav {
+        display: none;
+    }
+    .menuImagen {
+        display: flex;
+        justify-content: center;
+    }
+    .menuImagen img {
+        width: 70%;
+    }
+    .superior h1 {
+        font-size: 2rem;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 20%;
+    }
+    .logo a {
+        display: flex;
+        width: 100%;
+    }
+    .logo img {
+        margin-top: 23%;
+        margin-left: 10%;
+        height: 60%; 
+        width: 100%;
+    }
+/* HEADER END */
+
+/* SECCION 1 */
+    .seccion1 {
+        flex-direction: column;
+        border: solid 2px;
+    }
+    .textoPrincipal {
+        width: 100%;
+        border: none;       
+    }
+    .textoPrincipal p {
+        line-height: 14px;
+        padding: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        color: black;
+    }
+
+/* SECCION 2*/
+    .seccion2 h2 {
+        font-size: 1rem;
+        padding: 2px;
+        height: 4rem;
+    }
+
+/* SECCION 3 */
+    .seccion3 {
+        height: 30rem;
+    }
+    .seccion3__formulario {
+        align-items: center;
+        height: 15rem;
+        color: rgb(254, 241, 255);
+    }
+    .seccion3__formulario a {
+        color: rgb(254, 241, 255);
+        margin-left: 6rem;
+    }
+    button {
+        margin-top: 2px;
+    }
+
+/* FOOTER */
+    .inferior {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+        border: solid 2px;
+    }
+    .redes {
+        width: 100%;
+    }
+    .inferior .redes nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    .inferior .redes nav ul img {
+        width: 25px;
+    }
+    .inferior ul {
+        list-style: none;
+    }
+    .inferior a {
+        text-decoration: none;
+    }
+    .inferior .redes nav ul li {
+        padding: 1px;
+    }
+    .inferior .terminosYcondiciones nav ul li {
+        padding: 1px;
+        font-size: small;
+    }
+    .inferior .terminosYcondiciones nav ul {
+        flex-direction: column;
+    }
+    .inferior span {
+        position: inherit;
+        width: 100%;
+        font-size: small;
+    }
+/* FOOTER END */
+
+/* NEWS */
+
+.noticias {
+    background-image: linear-gradient(to bottom, rgb(216, 139, 223), rgb(196, 196, 196));
+    margin: 0.1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (8, 1fr);
+    grid-template-areas: 
+    "item1"
+    "item2" 
+    "item3" 
+    "item4"
+    "item5" 
+    "item6" 
+    "item7" 
+    "item8"
+}
+
+/* TOUR */
+.tourPrincipal {
+    background-color: rgb(216, 168, 223);
+}
+.tour h1 {
+    margin-top: 0;
+}
+.tour h2 {
+    text-align: center;
+}
+.eventos {
+    padding: 0;
+    border: none;
+    gap: 1rem;
+    width: 98%;
+    margin-left: 1%;
+}
+.eventos__item {
+    border: solid;
+    padding: 0.5rem;
+    font-size: small;
+}
+
+.informacionExtra h2 {
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+.informacionExtra h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.informacionExtra iframe {
+    height: 15rem;
+    width: 100%;
+}
+
+/* MERCH */
+.mercaderia h1 {
+    margin: 1rem;
+    font-size: 2rem;   
+}
+.merch {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    "item1"
+    "item2" 
+    "item3" 
+    "item4"
+    "item5" 
+    "item6" 
+    "item7" 
+    "item8"
+}
+.merch__item {
+    width: 100%;
+    margin: 0.1rem;
+    padding: 0;
+    border: solid 2px;
+}
+.merch__item img {
+    width: 100%; 
+}
+
+/* MUSIC */
+.stream {  
+    background-color: rgb(174, 170, 175); 
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+}
+.stream img {
+    width: 100%;
+}
+.servicio { 
+    gap: 1rem;
+}
+
+/* TERMINOS */
+.terms {
+    text-align: center;
+    font-size: small;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.terms h1 {
+    padding-top: 2rem;
+}
+
+}
+
+
+
+
