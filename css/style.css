@@ -212,7 +212,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(216, 139, 223);
-    height: 15vh;
+    
     border: solid 2px;
     font-family: 'Averia Serif Libre', cursive;
 }
@@ -518,10 +518,10 @@ button {
         align-items: center;
         text-align: center;
         gap: 0.5rem;
-        border: solid 2px;
     }
     .redes {
         width: 100%;
+        border: none;
     }
     .inferior .redes nav ul {
         width: 100%;
