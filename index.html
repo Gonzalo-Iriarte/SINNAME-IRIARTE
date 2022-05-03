@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S I N N A M E</title>
     <link rel="shortcut icon" href="images/logo.jpg">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!--CSS Y JS LINKS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <!--Averia Serif Libre-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,113 +20,125 @@
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
 </head>
 
-<body class="cuadro">
-    <header class="superior">
-        <span class="logo">
-            <img src="images/logo.jpg" alt="LOGO"></a>
-        </span>
-        <h1>S I N N A M E</h1>
-        <span class="menuImagen">
-            <img src="images/menu-icon.png" alt="menu">
-        </span>
-        <nav>
-            <ul>
-                <li><a href="pages/news.html">NEWS</a></li>
-                <li><a href="pages/tour.html">TOUR</a></li>
-                <li><a href="pages/merch.html">MERCH</a></li>
-                <li><a href="pages/music.html">MUSIC</a></li>            
-            </ul>
-        </nav>
-    </header>
+<body>
+    <div class="container">
 
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img class="w-25 rounded-circle" src="./images/logo.jpg" alt="logo">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto fs-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/news.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/tour.html">TOUR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/merch.html">MERCH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/music.html">MUSIC</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main class="row ">
+            <section class="col col-lg-12 text-center">
+                <h1 class="display-2 mb-2 mb-md-5">S I N N A M E</h1>
+                <div class="row g-2">
+                    <div class="col-12 ">
+                        <img src="./images/imagen-fondo.jpg" alt="ImagenFondo" class="card-img-top">
+                    </div>
+                    <div class="col-12 ">
+                        <article class="card">
+                            <img src="./images/imagen-ppal.jpg" alt="ImagenPpal" class="card-img-top">
+                            <div class="card-body ">
+                                <h3 class="card-title">About us</h3>
+                                <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Consequuntur non, officia vitae fugiat eius exercitationem id voluptates 
+                                    rem inventore incidunt sint sunt excepturi quas labore fuga, asperiores 
+                                    natus culpa voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Iste repellendus perferendis libero illo consequatur? Vel exercitationem quibusdam aliquid 
+                                    odit doloribus ex magni? Ratione natus culpa placeat facere ipsum eos ullam?</p>
+                                <a class="btn btn-secondary" href="">Learn More</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12">
+                        <article class="card">
+                            <img src="./images/imagenTextoPpal.jpg" alt="ImagenForm" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">STAY CLOSE WITH THE LATEST NEWS</h4>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                  </div>
+                                  <a class="btn btn-secondary" href="">SUBMIT</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <main class="principal">
-               
-        <span class="imagenFondo">
-            <img src="images/imagen-fondo.jpg" alt="imagen-fondo">
-        </span>
-     
-        <section class="seccion1">
-
-            <span class="imagenPrincipal">
-                <img src="images/imagen-ppal.jpg" alt="imagen2" >
+        <footer class="text-center">
+            <nav class="navbar navbar-light bg-light mt-md-5">
+                <div class="container">
+                        <ul class="navbar-nav w-100 d-flex flex-row justify-content-evenly">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.twitter.com"><img  class="img-fluid" src="images/twitter-icon.png" alt="" width="75%"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.instagram.com"><img class="img-fluid" src="images/instagram-icon.png" alt="" width="75%" ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.youtube.com"><img class="img-fluid" src="images/youtube-icon.png" alt="" width="75%" ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.facebook.com"><img class="img-fluid" src="images/facebook-icon.png" alt="" width="75%" ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.spotify.com"><img class="img-fluid" src="images/spotify-icon.png" alt="" width="75%" ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.email.com"><img class="img-fluid" src="images/email-icon.png" alt="" width="75%"></a>
+                            </li>
+                        </ul>
+                </div>
+            </nav>
+            <span>
+                ©2022 ALL RIGHTS RESERVED
             </span>
-
-            <div class="textoPrincipal">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odit, 
-                    tenetur quis nesciunt repellendus, error officiis facere et praesentium 
-                    sequi sit suscipit doloribus corrupti adipisci non expedita excepturi 
-                    nulla beatae?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odit, 
-                    tenetur quis nesciunt repellendus, error officiis facere et praesentium 
-                    sequi sit suscipit doloribus corrupti adipisci non expedita excepturi 
-                    nulla beatae?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odit, 
-                    tenetur quis nesciunt repellendus, error officiis facere et praesentium 
-                    sequi sit suscipit doloribus corrupti adipisci non expedita excepturi 
-                    nulla beatae?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam odit, 
-                    tenetur quis nesciunt repellendus, error officiis facere et praesentium 
-                    sequi sit suscipit doloribus corrupti adipisci non expedita excepturi 
-                    nulla beatae?
-                </p>
-            </div>
-        </section>
-
-        <section class="seccion2">
-            <h2>¡CHECK OUT THIS HOME MADE VERSION OF "SECRET FORMULA" WE MADE FOR YOU!</h2>
-            <video controls src=""></video>          
-        </section>
-
-        <section class="seccion3">
-            <div class="seccion3__formulario">
-                <h2>Keep up to date!</h2>
-                <form action="" method="" enctype="">
-                    <div>
-                        <label for="name">Name</label> 
-                        <input required type="text" name="name" id="name" placeholder="Ingrese su nombre">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input required type="" id="email" name="email" placeholder="Ingrese su email">
-                    </div>
-                    <div>
-                        <button>SEND</button>
-                        <a href="">terms</a>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="inferior">
-        <div class="redes">
-            <nav>
-                <ul>
-                    <li><a href="http://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="twitter-icon"></a></li>
-                    <li><a href="http://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="instagram-icon"></a></li>
-                    <li><a href="http://www.youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="youtube-icon"></a></li>
-                    <li><a href="http://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="facebook-icon"></a></li>
-                    <li><a href="http://www.spotify.com" target="_blank"><img src="images/spotify-icon.png" alt="spotify-icon"></a></li>
-                    <li><a href="#name"><img src="images/email-icon.png" alt="email-icon"></a></li>
-                </ul>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid  ">
+                        <ul class="navbar-nav  w-100 fs-6 d-flex flex-row justify-content-evenly ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/terminos.html">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/terminos.html">Terms of Use</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/terminos.html">Cookies Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/terminos.html">Cookies Settings</a>
+                            </li>
+                        </ul>
+                </div>
             </nav>
-        </div>
-
-        <span>
-            ©2022 ALL RIGHTS RESERVED
-        </span>
-        
-        <div class="terminosYcondiciones">
-            <nav>
-                <ul>
-                    <li><a href="pages/terminos.html">Privacy Policy</a></li>
-                    <li><a href="pages/terminos.html">Terms of Use</a></li>
-                    <li><a href="pages/terminos.html">Cookies Policy</a></li>
-                    <li><a href="pages/terminos.html">Cookies Settings</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
